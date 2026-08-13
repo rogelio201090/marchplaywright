@@ -1,0 +1,50 @@
+| Role             | Common HTML elements         | Example with `name` parameter                         |
+| ---------------- | ---------------------------- | ----------------------------------------------------- |
+| **button**       | `<button>`                   | `page.getByRole('button', { name: 'Submit' })`        |
+| **link**         | `<a>`                        | `page.getByRole('link', { name: 'Home' })`            |
+| **textbox**      | `<input>`, `<textarea>`      | `page.getByRole('textbox', { name: 'Email' })`        |
+| **checkbox**     | `<input type="checkbox">`    | `page.getByRole('checkbox', { name: 'Remember me' })` |
+| **radio**        | `<input type="radio">`       | `page.getByRole('radio', { name: 'Male' })`           |
+| **combobox**     | `<select>` / combobox inputs | `page.getByRole('combobox', { name: 'Country' })`     |
+| **option**       | `<option>`                   | `page.getByRole('option', { name: 'Mexico' })`        |
+| **heading**      | `<h1>`–`<h6>`                | `page.getByRole('heading', { name: 'Welcome' })`      |
+| **img**          | `<img>`                      | `page.getByRole('img', { name: 'Logo' })`             |
+| **list**         | `<ul>`, `<ol>`               | `page.getByRole('list', { name: 'Products' })`        |
+| **listitem**     | `<li>`                       | `page.getByRole('listitem', { name: 'Product 1' })`   |
+| **table**        | `<table>`                    | `page.getByRole('table', { name: 'Users' })`          |
+| **row**          | `<tr>`                       | `page.getByRole('row', { name: 'John Smith' })`       |
+| **cell**         | `<td>`                       | `page.getByRole('cell', { name: 'Mexico' })`          |
+| **columnheader** | `<th>`                       | `page.getByRole('columnheader', { name: 'Name' })`    |
+| **dialog**       | Dialog/modal                 | `page.getByRole('dialog', { name: 'Login' })`         |
+| **alert**        | Alert messages               | `page.getByRole('alert', { name: 'Error' })`          |
+| **menu**         | Menu                         | `page.getByRole('menu', { name: 'Options' })`         |
+| **menuitem**     | Menu item                    | `page.getByRole('menuitem', { name: 'Settings' })`    |
+| **tab**          | Tabs                         | `page.getByRole('tab', { name: 'Profile' })`          |
+| **tabpanel**     | Tab content                  | `page.getByRole('tabpanel', { name: 'Profile' })`     |
+| **navigation**   | `<nav>`                      | `page.getByRole('navigation', { name: 'Main menu' })` |
+| **progressbar**  | Progress indicator           | `page.getByRole('progressbar', { name: 'Loading' })`  |
+| **slider**       | Range slider                 | `page.getByRole('slider', { name: 'Volume' })`        |
+| **spinbutton**   | Number input                 | `page.getByRole('spinbutton', { name: 'Age' })`       |
+
+
+
+
+
+Most important ones to memorize
+
+For everyday Playwright automation, I'd focus on these first:
+
+page.getByRole('button', { name: 'Login' })
+
+page.getByRole('link', { name: 'Home' })
+
+page.getByRole('textbox', { name: 'Username' })
+
+page.getByRole('checkbox', { name: 'Remember me' })
+
+page.getByRole('radio', { name: 'Male' })
+
+page.getByRole('combobox', { name: 'Country' })
+
+page.getByRole('heading', { name: 'Welcome' })
+

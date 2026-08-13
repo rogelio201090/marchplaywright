@@ -1,0 +1,34 @@
+| Method                          | Description                                                           | Common use                                         | Example                                                                     |
+| ------------------------------- | --------------------------------------------------------------------- | -------------------------------------------------- | --------------------------------------------------------------------------- |
+| **`.click()`**                  | Clicks an element.                                                    | Buttons, links, checkboxes, menus                  | `await page.getByRole('button', { name: 'Login' }).click()`                 |
+| **`.fill()`**                   | Fills an input with text. It clears the existing value first.         | Textboxes, inputs, textareas                       | `await page.getByRole('textbox', { name: 'Email' }).fill('test@email.com')` |
+| **`.press()`**                  | Presses a specific keyboard key while the element is focused.         | Enter, Escape, Tab, keyboard shortcuts             | `await page.getByRole('textbox').press('Enter')`                            |
+| **`.type()`**                   | Types text character by character.                                    | Simulating keyboard typing                         | `await page.getByRole('textbox').type('Hello')`                             |
+| **`.pressSequentially()`**      | Types text sequentially, allowing keyboard events for each character. | Testing inputs that react to individual keystrokes | `await page.getByRole('textbox').pressSequentially('Hello')`                |
+| **`.check()`**                  | Checks a checkbox or radio button.                                    | Checkboxes and radio buttons                       | `await page.getByRole('checkbox', { name: 'Remember me' }).check()`         |
+| **`.uncheck()`**                | Unchecks a checkbox.                                                  | Removing a checkbox selection                      | `await page.getByRole('checkbox', { name: 'Remember me' }).uncheck()`       |
+| **`.selectOption()`**           | Selects an option from a `<select>` element.                          | Dropdowns                                          | `await page.getByRole('combobox').selectOption('Mexico')`                   |
+| **`.hover()`**                  | Moves the mouse over an element.                                      | Menus, tooltips, hover effects                     | `await page.getByRole('button', { name: 'Menu' }).hover()`                  |
+| **`.focus()`**                  | Gives focus to an element.                                            | Testing focused inputs/elements                    | `await page.getByRole('textbox').focus()`                                   |
+| **`.blur()`**                   | Removes focus from an element.                                        | Testing behavior after leaving an input            | `await page.getByRole('textbox').blur()`                                    |
+| **`.clear()`**                  | Clears the text from an input.                                        | Removing existing input text                       | `await page.getByRole('textbox').clear()`                                   |
+| **`.dblclick()`**               | Double-clicks an element.                                             | Applications that use double-click actions         | `await page.getByText('File').dblclick()`                                   |
+| **`.dragTo()`**                 | Drags one element to another element.                                 | Drag-and-drop functionality                        | `await source.dragTo(target)`                                               |
+| **`.scrollIntoViewIfNeeded()`** | Scrolls an element into view if necessary.                            | Elements outside the visible area                  | `await page.getByRole('button').scrollIntoViewIfNeeded()`                   |
+| **`.screenshot()`**             | Takes a screenshot of an element.                                     | Debugging or visual testing                        | `await page.getByRole('button').screenshot({ path: 'button.png' })`         |
+| **`.evaluate()`**               | Executes JavaScript in the browser using the element.                 | Advanced browser interaction                       | `await page.getByRole('button').evaluate(el => el.textContent)`             |
+
+
+| Method            | Remember it as                |
+| ----------------- | ----------------------------- |
+| `.click()`        | **Click something**           |
+| `.fill()`         | **Enter text**                |
+| `.press()`        | **Press a keyboard key**      |
+| `.check()`        | **Check a checkbox/radio**    |
+| `.uncheck()`      | **Uncheck a checkbox**        |
+| `.selectOption()` | **Select from dropdown**      |
+| `.hover()`        | **Move mouse over something** |
+| `.clear()`        | **Remove input text**         |
+| `.focus()`        | **Focus an element**          |
+| `.dblclick()`     | **Double-click something**    |
+

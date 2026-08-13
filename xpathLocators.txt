@@ -1,0 +1,30 @@
+//html/body/l/input : Absolute xpath
+
+//input[@ankit='sunil'] : Relative xpath
+
+case 1: and
+//input[@class='ewtei' and @id='wer']
+
+case 2: parent to child 
+//o[@id='one']/input[@class='ewtei']
+
+case 3: using the unique visible text
+//n[text()='Select your country']
+
+case 4: contains ()
+//n[contains(text(),'ORDERID')]
+
+
+xpath functions: 
+
+normalize-space - //n[normalize-space(text())='ORDERID']
+following-sibling - //input[@class='ytr']/following-sibling::input[@id='wer']
+preceding-sibling - //input[@class='ytr']/preceding-sibling::input[]
+ancestor - //x[text()='sixx']/ancestor::p
+descendant - //p[@id='threert']/descendant::x
+parent - //x[text()='sixxert']/parent::z
+
+Table with multiple TRs and TDs
+
+//table[@id='version']/tbody/tr[2]/td[3]
+
