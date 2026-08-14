@@ -1,5 +1,4 @@
 import {test, expect} from '@playwright/test';
-import path from "path";
 
 test('take screenshot of the page', async ({ page }) => {
   // Navigate to the desired URL
