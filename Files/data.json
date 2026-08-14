@@ -1,0 +1,13 @@
+{
+  "id": 1,
+  "name": "Jane Doe",
+  "email": "jane.doe@example.com",
+  "is_active": true,
+  "age": 28,
+  "hobbies": ["reading", "hiking", "coding"],
+  "address": {
+    "city": "Monterrey",
+    "country": "Mexico"
+  },
+  "phone_number": null
+}
