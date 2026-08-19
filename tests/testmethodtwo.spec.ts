@@ -7,7 +7,7 @@ test.skip("Test Method Two", async ({ page }) => {
     await expect(page).toHaveTitle(/Example Domain/);
 }); 
 
-test.only("Test Method Two - Only", async ({ page }) => {
+test("Test Method Two - Only", async ({ page }) => {
     console.log("Executing Test Method Two - Only");
     await page.goto('https://example.com');
     await expect(page.locator('h1')).toHaveText('Example Domain');
