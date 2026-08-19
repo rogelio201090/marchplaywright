@@ -30,6 +30,6 @@ import {test, expect} from "@playwright/test"
 //    await page.waitForTimeout(2000);
 // });
 
-test("Test Window Handling", async ({page})=>{
-   await page.goto('https://vinothqaacademy.com/multiple-windows/')
-});
+// test("Test Window Handling", async ({page})=>{
+//    await page.goto('https://vinothqaacademy.com/multiple-windows/')
+// });

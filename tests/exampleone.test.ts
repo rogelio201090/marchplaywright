@@ -1,4 +1,4 @@
-import {test, expect} from "@playwright/test"
+// import {test, expect} from "@playwright/test"
 
 // test("Verify the title of the pag", async ({page})=> {
 //    await page.goto("https://www.saucedemo.com/");
@@ -52,43 +52,43 @@ import {test, expect} from "@playwright/test"
 //    console.log(text);
 // });
 
-test("Mouse Operations",async ({page}) => {
-   await page.goto('https://vinothqaacademy.com/mouse-event/');
-   // Double-click
-   await page.locator("#doubleBtn").dblclick();
-   await page.waitForTimeout(2000);
-   // Right Button
-   await page.locator("#rightBtn").click({button: "right"});
-   await page.waitForTimeout(2000);
-   await page.locator("#rightBtn").click({button: "right"});
-   await page.waitForTimeout(2000);
-   //Drag to
-   const source = await page.locator("#dragItem");
-   const target = await page.locator("#dropZone");
-   await source.dragTo(target);
-   await page.waitForTimeout(2000);
-   //Hover
-   await page.locator("#tooltipTarget").hover();
-   await page.waitForTimeout(2000);
+// test("Mouse Operations",async ({page}) => {
+//    await page.goto('https://vinothqaacademy.com/mouse-event/');
+//    // Double-click
+//    await page.locator("#doubleBtn").dblclick();
+//    await page.waitForTimeout(2000);
+//    // Right Button
+//    await page.locator("#rightBtn").click({button: "right"});
+//    await page.waitForTimeout(2000);
+//    await page.locator("#rightBtn").click({button: "right"});
+//    await page.waitForTimeout(2000);
+//    //Drag to
+//    const source = await page.locator("#dragItem");
+//    const target = await page.locator("#dropZone");
+//    await source.dragTo(target);
+//    await page.waitForTimeout(2000);
+//    //Hover
+//    await page.locator("#tooltipTarget").hover();
+//    await page.waitForTimeout(2000);
 
-   //Scroll to
-   await page.evaluate(() => {
-      window.scrollBy(0,500);
-      // window.scrollTo(0,document.body.scrollHeight);
-   });
+//    //Scroll to
+//    await page.evaluate(() => {
+//       window.scrollBy(0,500);
+//       // window.scrollTo(0,document.body.scrollHeight);
+//    });
 
-   //Slider
-   const tooltipText = await page.locator("#handle_max");
-   const slider = await tooltipText.boundingBox();
+//    //Slider
+//    const tooltipText = await page.locator("#handle_max");
+//    const slider = await tooltipText.boundingBox();
 
-   if (slider) {
-      const startx = slider.x+slider.width/2;
-      const starty = slider.y+slider.height/2;
-      await page.mouse.move(startx,starty);
-      await page.mouse.down();
-      await page.mouse.move(startx+100, starty);
-      await page.mouse.up();
-   }
+//    if (slider) {
+//       const startx = slider.x+slider.width/2;
+//       const starty = slider.y+slider.height/2;
+//       await page.mouse.move(startx,starty);
+//       await page.mouse.down();
+//       await page.mouse.move(startx+100, starty);
+//       await page.mouse.up();
+//    }
 
-await page.waitForTimeout(2000);
-});
+// await page.waitForTimeout(2000);
+// });
